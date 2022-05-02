@@ -14,6 +14,9 @@ class ViewController: UIViewController {
     @IBOutlet var imgView: UIImageView!
     
     @IBOutlet var pageControl: UIPageControl!
+    
+    @IBOutlet var numberLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -24,10 +27,13 @@ class ViewController: UIViewController {
         pageControl.currentPageIndicatorTintColor = UIColor.red
         imgView.image = UIImage(named: images[0])
         
+        numberLabel.text = String(pageControl.currentPage)
+        
     }
 
     @IBAction func pageChange(_ sender: UIPageControl) {
         imgView.image = UIImage(named:images [pageControl.currentPage])
+        numberLabel.text = String(pageControl.currentPage)
     }
     
 }

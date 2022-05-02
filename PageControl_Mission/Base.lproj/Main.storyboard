@@ -25,13 +25,22 @@
                                     <action selector="pageChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="VwP-7a-joW"/>
                                 </connections>
                             </pageControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5gw-dq-nrq">
+                                <rect key="frame" x="149" y="77" width="116" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="L7x-Yp-GBz" secondAttribute="trailing" id="3ni-pH-yug"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5gw-dq-nrq" secondAttribute="trailing" constant="149" id="6JH-ku-ax0"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="1bz-Sl-VTP" secondAttribute="bottom" constant="64" id="9GM-zJ-Qa3"/>
                             <constraint firstItem="1bz-Sl-VTP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="BaL-Y8-WbI"/>
+                            <constraint firstItem="5gw-dq-nrq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="33" id="REO-07-RtZ"/>
+                            <constraint firstItem="5gw-dq-nrq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="149" id="SVy-ec-vLa"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1bz-Sl-VTP" secondAttribute="trailing" constant="20" id="ZOE-An-8Vz"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="L7x-Yp-GBz" secondAttribute="bottom" constant="74" id="bWc-iW-J9a"/>
                             <constraint firstItem="1bz-Sl-VTP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="nQT-hW-ZqV"/>
@@ -40,6 +49,7 @@
                     </view>
                     <connections>
                         <outlet property="imgView" destination="1bz-Sl-VTP" id="DMB-jP-7Ay"/>
+                        <outlet property="numberLabel" destination="5gw-dq-nrq" id="rpn-ak-Wem"/>
                         <outlet property="pageControl" destination="L7x-Yp-GBz" id="hfk-RC-DPi"/>
                     </connections>
                 </viewController>
